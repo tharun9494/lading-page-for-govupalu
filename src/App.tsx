@@ -91,7 +91,7 @@ function App() {
             >
               <div className={`
                 relative overflow-hidden rounded-3xl ${link.color} ${link.hoverColor} 
-                w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28
+                w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28
                 flex items-center justify-center
                 transition-all duration-300 ease-out
                 transform hover:scale-110 hover:rotate-3
@@ -102,7 +102,7 @@ function App() {
                 <div className="absolute inset-0 bg-gradient-to-tr from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 
                 {/* Icon */}
-                <IconComponent className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-white relative z-10 transform group-hover:scale-110 transition-transform duration-300" />
+                <IconComponent className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-white relative z-10 transform group-hover:scale-110 transition-transform duration-300" />
                 
                 {/* Hover glow effect */}
                 <div className="absolute inset-0 rounded-3xl bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
@@ -122,9 +122,11 @@ function App() {
           );
         })}
       </div>
-      {/* Contact Email */}
-      <div className="mt-10 text-center">
-        <a href="mailto:contact@govupalu.com" className="text-blue-700 hover:underline text-lg font-medium">contact@govupalu.com</a>
+      
+      {/* Contact Information */}
+      <div className="mt-10 text-center space-y-2">
+        <a href="mailto:contact@govupalu.com" className="text-blue-700 hover:underline text-lg font-medium block">contact@govupalu.com</a>
+        <a href="tel:+916300280383" className="text-green-700 hover:underline text-lg font-medium block">+91 6300280383</a>
       </div>
     </div>
   );
